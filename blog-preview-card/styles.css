@@ -1,0 +1,96 @@
+:root {
+    --background: #F4D04E;
+    --gray-950: #111111;
+    --gray-500: #6B6B6B;
+    --white: #FFFFFF;
+
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+    color: var(--gray-950);
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--background);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    gap: var(--spacing-300);
+    width: 384px;
+    background-color: var(--white);
+    padding: var(--spacing-300);
+    border-radius: var(--spacing-300);
+    filter: drop-shadow(10px 10px 0px var(--gray-950));
+}
+
+.card-image {
+    border-radius: var(--spacing-150);
+}
+
+.card-content {
+    flex: 2;
+    gap: var(--spacing-150);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-tag {
+    font-weight: 300;
+    border-radius: var(--spacing-50);
+    width:min-content;
+    padding: var(--spacing-50) var(--spacing-150);
+    display: grid;
+    place-content: center;
+    background-color: var(--background);
+}
+
+.card-date {
+    font-weight: 400;     
+}
+
+.card-title, .card-tag, .card-author-name {
+    font-weight: 700;
+}
+
+.card-text {
+    color: var(--gray-500);
+    padding:0 var(--spacing-300) 0 0;
+    font-size: 16px;
+}
+
+.card-author {
+    display:flex;
+    gap: var(--spacing-150);
+    align-items: center;
+}
+
+.card-author-name:hover, .card-title:hover {
+    color: var(--background);
+}
+
+.attribution {
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}

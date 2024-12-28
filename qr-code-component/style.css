@@ -4,7 +4,7 @@
     --slate-900: hsl(218, 44%, 22%);
     --white: hsl(0, 0%, 100%);
 
-    --spacing-large: 24px;
+    --spacing-large: 24px; 
     --spacing: 16px;
 }
 
@@ -54,7 +54,6 @@ p {
 }
 
 .attribution {
-    text-align: center;
     position: fixed;
     bottom:0;
     width: 100%;
