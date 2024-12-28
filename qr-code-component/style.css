@@ -1,0 +1,61 @@
+:root {
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --white: hsl(0, 0%, 100%);
+
+    --spacing-large: 24px;
+    --spacing: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--slate-300);
+}
+
+.card {
+    gap: var(--spacing-large);
+    width:320px;
+    height:500px;
+    padding: var(--spacing) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 1rem;
+    background-color: var(--white);
+}
+
+img {
+    border-radius: 1rem;
+}
+
+h1, p {
+    text-align: center;
+    padding: 0 var(--spacing);
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--slate-900)
+}
+
+p {
+    font-size: 16px;
+    color: var(--slate-500)
+}
+
+.attribution {
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
