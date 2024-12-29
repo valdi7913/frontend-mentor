@@ -1,0 +1,134 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--stone-100: hsl(30, 54%, 90%);
+	--stone-150: hsl(30, 18%, 87%);
+	--stone-600: hsl(30, 10%, 34%);
+	--stone-900: hsl(24, 5%, 18%);
+	--brown-800: hsl(14, 45%, 36%);
+	--rose-800: hsl(332, 51%, 32%);
+	--rose-50: hsl(330, 100%, 98%);
+
+	--spacing-bigger: 32px;
+	--spacing-big: 24px;
+	--spacing: 16px;
+	--spacing: 8px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 150%;
+	font-family: "Outfit", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+	text-wrap: wrap;
+	color: var(--stone-600);
+}
+
+h1 {
+	color: var(--stone-900);
+	font-size: 40px;
+	font-family: "Young Serif", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h2 {
+	color: var(--brown-800);
+	font-family: "Young Serif", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+h3 {
+	color: var(--rose-800);
+}
+
+b {
+	font-weight: 700;
+}
+
+body {
+	margin: 96px 0;
+	background-color: var(--stone-100);
+	display: grid;
+	place-content: center;
+}
+
+img {
+	width: inherit;
+	border-radius: var(--spacing);
+}
+
+main {
+	width: fit-content;
+	display: flex;
+	width: 650px;
+	flex-direction: column;
+	gap: var(--spacing-big);
+	background-color: var(--white);
+	padding: var(--spacing-bigger);
+	border-radius: var(--spacing-big);
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-big);
+}
+
+li {
+	padding-left: 20px;
+	margin-left: 20px;
+}
+
+li::marker {
+	margin-right: 10px;
+	color: var(--brown-800)
+}
+
+.summary > ul > li::marker {
+	color: var(--rose-800)
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--stone-150);
+    /* margin: 1em 0; */
+    padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid var(--stone-150);
+}
+
+td {
+	padding: var(--spacing);
+}
+
+td:nth-child(2) {
+	font-weight: 500;
+	color: var(--rose-800);
+}
+
+.summary {
+	background-color: var(--rose-50);
+	border-radius: var(--spacing);
+	padding: var(--spacing-big);
+}
+
+.attribution {
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
