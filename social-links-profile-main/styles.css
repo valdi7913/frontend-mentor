@@ -5,7 +5,7 @@
     --grey-800: hsl(0, 0%, 12%);
     --grey-900: hsl(0, 0%, 8%);
 
-    --spacing-large: 24px;
+    --spacing-large: 32px;
     --spacing: 16px;
     --spacing-small: 8px;
 }
@@ -32,6 +32,7 @@ main {
 }
 
 .card {
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +45,7 @@ main {
 
 .green {
     color: var(--green);
+    font-weight: 400;
 }
 
 img {
@@ -77,6 +79,7 @@ li:hover {
 }
 
 p {
+    font-size: 14px;
     font-weight: 200;
 }
 
