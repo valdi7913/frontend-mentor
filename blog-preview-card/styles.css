@@ -86,6 +86,10 @@ body {
     align-items: center;
 }
 
+.card-author-image {
+    width: 30px;
+}
+
 .card-author-name:hover, .card-title:hover {
     color: var(--background);
 }
