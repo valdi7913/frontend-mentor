@@ -4,3 +4,4 @@
 
 1. [qr-code-component](./qr-code-component/)
 2. [blog-preview-card](./blog-preview-card/)
+3. [social-links-profile-main](./social-links-profile-main/)
